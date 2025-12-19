@@ -1,0 +1,326 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.page {
+    display: flex;
+    background-color: black;
+    color: azure;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.sidemenu {
+    background-color: rgb(0, 0, 0);
+    width: 18rem;
+    position: fixed;   /* yaha change kiya */
+    top: 0;
+    left: 0;
+    height: 100vh;     /* pura height */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    background-color: #121212;
+    width: 17.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6.25rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    position: relative;
+    margin-top:0.5rem;
+}
+
+.navoption {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.navoption:hover {
+    opacity: 1;
+}
+
+.navoption i {
+    font-size: 1.25rem;
+}
+
+.navoption a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.libary {
+    background-color: #121212;
+    border-radius: 1rem;
+    width: 17.5rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    position: relative;  /* fixed hata diya */
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16.5rem;
+}
+
+.icons {
+    display: flex;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.liboption img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.box {
+    background-color: #232323;
+    height: 7rem;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.stickynav {
+    position: sticky;
+    top: 0%;
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin-left: -1.5rem;
+    z-index: 100;
+}
+
+.libboxesa {
+    margin-top: 1rem;
+}
+
+.maincontent {
+    background-color: #121212;
+    position: relative;
+    flex: 1;
+    border-radius: 1.5rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    margin-left: 19rem; /* yaha space de sidemenu ke liye */
+}
+
+.navicons {
+    margin-left: 0.75rem;
+    margin-top: 16px;
+}
+
+.navoptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.navoptions button {
+    margin-right: 1rem;
+}
+
+.darkbadge {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+
+
+.cards {
+    background-color: #232323;
+    width: 9.3rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.cardcontainer {
+    display: flex;
+    margin: 1rem 0rem 1rem 0rem;
+    flex-wrap: wrap;
+}
+
+.cardimg {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.info {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-top: 0.8rem;
+}
+
+.footer {
+    height: 300px;
+}
+
+.maincontent h2 {
+    opacity: 0.7;
+    display: flex;
+}
+h2:hover {
+    opacity: 2;
+    text-decoration: underline;
+}
+
+.musicplayer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.control {
+    width: 25%;
+}
+
+.playericons {
+    height: 1rem;
+    margin-left: 2rem;
+    opacity: 0.7;
+}
+.playericons:hover {
+    opacity: 1;
+}
+
+.playercontrol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+
+.bar {
+    width: 70% ;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    color:#1bd760;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.bar::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #1bd760;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: -6.5px;
+}
+
+.album {
+    display: flex;
+    width: 18rem;
+    align-items: center;
+    background-color:black;
+    justify-content: space-between;
+
+}
+
+
+.mus {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.david {
+    font-weight: 300;
+    font-size: small;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.mn {
+    height: 2rem;
+}
